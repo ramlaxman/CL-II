@@ -3,18 +3,18 @@ A* algorithm (U, V, C, D)
 2. Start traversing from the U.
 3. Let C = h(n) and D=g(n).
 4. Let Ui=(U1,U2,.....,Un) where U1 to Un are intermediate nodes between U and V.
-5. If U => Ui where i = 1st level node
+5. Now U => Ui where i = 1st level node
       f(n) = h(n) + g(n)
-   else {
-      if 
+6. If 
       U => Ui is directly connected where i > 1
       f(n) = h(n) + g(n)
       where is g(n) is backtracking distance from source i.e. U.
       
-      else U =>  Ui is connected where i > 1
+   else 
+      U =>  Ui is connected where i > 1
       f(n) = h(n) + g(n)
       where g(n) is distance which is summation of distance from Ui to U.
-      }
-6. Total A* cost 
+      
+7. Total A* cost 
    f(i) = ∑ from n=1 to i (f(n))
    will be summation from U to V.
