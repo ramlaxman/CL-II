@@ -1,4 +1,5 @@
 A* algorithm (U, V, C, D)
+
 1. Let U be source and V be destination.
 2. Start traversing from the U.
 3. Let C = h(n) and D=g(n).
@@ -16,5 +17,7 @@ A* algorithm (U, V, C, D)
       where g(n) is distance which is summation of distance from Ui to U.
       
 7. Total A* cost 
+
    f(i) = ∑ from n=1 to i (f(n))
+   
    will be summation from U to V.
