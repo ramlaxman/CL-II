@@ -1,0 +1,36 @@
+MinMax (GamePosition game) {
+  return MaxMove (game);
+}
+
+ 
+MaxMove (GamePosition game) {
+  if (GameEnded(game)) {
+    return EvalGameState(game);
+  }
+  else {
+    best_move < - {};
+    moves <- GenerateMoves(game);
+    ForEach moves {
+       move <- MinMove(ApplyMove(game));
+       if (Value(move) > Value(best_move)) {
+          best_move < - move;
+       }
+    }
+    return best_move;
+  }
+}
+ 
+
+
+MinMove (GamePosition game) {
+  best_move <- {};
+  moves <- GenerateMoves(game);
+  ForEach moves {
+     move <- MaxMove(ApplyMove(game));
+     if (Value(move) > Value(best_move)) {
+        best_move < - move;
+     }
+  }
+ 
+  return best_move;
+}
