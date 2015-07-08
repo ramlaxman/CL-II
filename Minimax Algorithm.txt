@@ -8,12 +8,12 @@ MaxMove (GamePosition game) {
     return EvalGameState(game);
   }
   else {
-    best_move < - {};
+    best_move <- {};
     moves <- GenerateMoves(game);
     ForEach moves {
        move <- MinMove(ApplyMove(game));
        if (Value(move) > Value(best_move)) {
-          best_move < - move;
+          best_move <- move;
        }
     }
     return best_move;
