@@ -36,7 +36,7 @@ Let’s consider a simple search problem in physical space (Figure 2.1).
 - The search space has been minimized here to the necessary places on the physical map (states) and the transitions
 that are possible between the states (application of operators). 
 
-- Each node in the tree is a physical location and the arcs between nodes are the legal moves. The depth of the tree is the distance from the initial position.
+- Each node in the tree is a physical location and the arcs between nodes are the legal moves. The depth of the tree is the distance from the initial position. <sup>[1](#myfootnote1)</sup>
 
 
 ![1](https://user-images.githubusercontent.com/1982225/27413682-89681788-571a-11e7-8dbe-d7a3e7d1faa1.png)
@@ -59,14 +59,14 @@ The only disk that may
 move is the small disk at the top of Peg A. For this disk, only two legal moves
 are possible, from Peg A to Peg B or C. From this state, there are three
 potential moves:
+
 1. Move the small disk from Peg C to Peg B.
 2. Move the small disk from Peg C to Peg A.
 3. Move the medium disk from Peg A to Peg B.
-The first move (small disk from Peg C to Peg B), while valid is not a potential
-move, as we just moved this disk to Peg C (an empty peg). Moving it a second
-time serves no purpose (as this move could have been done during the prior
-transition), so there’s no value in doing this now (a heuristic). The second
-move is also not useful (another heuristic), because it’s the reverse of the
 
-A heuristic is a simple or efficient rule for solving a given problem or
-making a decision.
+The first move (small disk from Peg C to Peg B), while valid is not a potential move, as we just moved this disk to Peg C (an empty peg). Moving it a second time serves no purpose (as this move could have been done during the prior transition), so there’s no value in doing this now (a heuristic). The second move is also not useful (another heuristic), because it’s the reverse of the previous move.
+
+[1] <a name="myfootnote1">1</a>: Footnote content goes here A heuristic is a simple or efficient rule for solving a given problem or making a decision.
+
+
+
