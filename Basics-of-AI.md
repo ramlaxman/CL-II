@@ -43,8 +43,6 @@ that are possible between the states (application of operators).
 
 ![2](https://user-images.githubusercontent.com/1982225/27403190-2e069672-56e7-11e7-8f0b-b09934e59da6.png)
 
-
-
 #### Search in a Puzzle Space
 
 The “Towers of Hanoi” puzzle: 
@@ -65,7 +63,33 @@ potential moves:
 
 The first move (small disk from Peg C to Peg B), while valid is not a potential move, as we just moved this disk to Peg C (an empty peg). Moving it a second time serves no purpose (as this move could have been done during the prior transition), so there’s no value in doing this now (a heuristic)<sup>[1](#myfootnote1)</sup>. The second move is also not useful (another heuristic), because it’s the reverse of the previous move.
 
-[1] <a name="myfootnote1">[1]</a>: A heuristic is a simple or efficient rule for solving a given problem or making a decision.
+Purpose: When our sequence of moves brings us from the initial position to the goal, we have a solution. The goal state in itself is not interesting, but instead what’s interesting is the sequence of moves that brought us to the goal state. The collection of moves (or solution), done in the proper order, is in essence a plan for reaching the goal. The plan for this configuration of the puzzle can be identified by starting from the goal position and backtracking to the initial position
+
+#### Search in a Adversarial Space
+
+Also known as game trees, these structures enumerate the possible moves by each player allowing the search algorithm to find an effective strategy for playing and winning the game.
+
+![image](https://user-images.githubusercontent.com/1982225/27416693-9e372020-572c-11e7-9a6b-a46dbb0cb61e.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a name="myfootnote1">[1]</a>: A heuristic is a simple or efficient rule for solving a given problem or making a decision.
 
 
 
