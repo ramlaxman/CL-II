@@ -52,10 +52,8 @@ that must be met.
 ![3](https://user-images.githubusercontent.com/1982225/27381273-cfeb0268-569f-11e7-964f-f41ca6eb554c.png)
 
 
-The only disk that may
-move is the small disk at the top of Peg A. For this disk, only two legal moves
-are possible, from Peg A to Peg B or C. From this state, there are three
-potential moves:
+The only disk that may move is the small disk at the top of Peg A. For this disk, only two legal moves
+are possible, from Peg A to Peg B or C. From this state, there are three potential moves:
 
 1. Move the small disk from Peg C to Peg B.
 2. Move the small disk from Peg C to Peg A.
@@ -71,25 +69,10 @@ Also known as game trees, these structures enumerate the possible moves by each 
 
 ![image](https://user-images.githubusercontent.com/1982225/27416693-9e372020-572c-11e7-9a6b-a46dbb0cb61e.png)
 
+Note that the depth of the tree determines the length of the game (number of moves). It’s implied in the tree that the shaded node is the final move to be made, and the player that makes this move loses the game. Also note the size of the tree. In this example, using six objects, a total of 28 nodes is required. If we increase our tree to illustrate a pile of seven objects, the
+tree increases to 42 nodes.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-----------------------
 <a name="myfootnote1">[1]</a>: A heuristic is a simple or efficient rule for solving a given problem or making a decision.
-
-
-
