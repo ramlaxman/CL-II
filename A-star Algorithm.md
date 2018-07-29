@@ -1,11 +1,17 @@
 A* algorithm (U, V, C, D)
+=====
 
 1. Let U be source and V be destination.
+
 2. Start traversing from the U.
+
 3. Let C = h(n) and D=g(n).
+
 4. Let Ui=(U1,U2,.....,Un) where U1 to Un are intermediate nodes between U and V.
+
 5. Now U => Ui for i = 1 where i = ith level nodes
       f(n) = h(n) + g(n)
+
 6. For i > 1
    if 
       U => Ui is directly connected where i > 1
