@@ -13,15 +13,18 @@ A* algorithm (U, V, C, D)
       f(n) = h(n) + g(n)
 
 6. For i > 1
-   if 
-      U => Ui is directly connected where i > 1
-      f(n) = h(n) + g(n)
-      where is g(n) is backtracking distance from source i.e. U.
+
+      if: 
       
-   else 
-      U =>  Ui is connected where i > 1
-      f(n) = h(n) + g(n)
-      where g(n) is distance which is summation of distance from Ui to U.
+            U => Ui is directly connected 
+            calculate f(n) = h(n) + g(n) 
+            where is g(n) is backtracking distance from source i.e. U.
+      
+      else:
+      
+            U =>  Ui is connected
+            f(n) = h(n) + g(n)
+            where g(n) is distance which is summation of distance from Ui to U.
       
 7. Total A* cost 
 
